@@ -1,0 +1,27 @@
+{
+  "name": "sdp-bdd-specification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require ./features/step_definitions/stepDefs.js ./features/*.feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-albaugh/sdp-bdd-specification.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-albaugh/sdp-bdd-specification/issues"
+  },
+  "homepage": "https://github.com/e-albaugh/sdp-bdd-specification#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "@cucumber/cucumber": "^11.2.0",
+    "chai": "^5.2.0",
+    "cypress": "^14.1.0"
+  }
+}

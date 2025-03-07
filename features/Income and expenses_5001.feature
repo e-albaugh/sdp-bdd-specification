@@ -1,5 +1,5 @@
 #Auto generated Octane revision tag
-@BSPID52004REV0.1.0
+@BSPID5001REV0.2.0
 Feature: Present Income and Expenses by Type
   As a bank customer
   I want to view my income and expenses categorized by type
@@ -8,14 +8,14 @@ Feature: Present Income and Expenses by Type
   Background:
     Given the user is logged into their bank account
 
-@TSCID315005
+@TSCID49001
   Scenario: View Summary of Income and Expenses
     Given the user is on the account overview page
     When the user navigates to the "Income and Expenses" section
     Then the user should see a summary of all income and expenses
     And the summary should display the total income and total expenses
 
-@TSCID315006
+@TSCID49002
   Scenario: Filter Income by Type
     Given the user is on the "Income and Expenses" page
     When the user selects "Income" from the filter options
@@ -23,7 +23,7 @@ Feature: Present Income and Expenses by Type
     Then the user should see a list of all transactions categorized as "Salary"
     And the total amount for "Salary" income should be displayed
 
-@TSCID315007
+@TSCID49003
   Scenario: Filter Expenses by Type
     Given the user is on the "Income and Expenses" page
     When the user selects "Expenses" from the filter options
@@ -31,7 +31,7 @@ Feature: Present Income and Expenses by Type
     Then the user should see a list of all transactions categorized as "Groceries"
     And the total amount for "Groceries" expenses should be displayed
 
-@TSCID315008
+@TSCID49004
   Scenario: Generate Report of Income and Expenses
     Given the user is on the "Income and Expenses" page
     When the user clicks on "Generate Report"
@@ -39,13 +39,13 @@ Feature: Present Income and Expenses by Type
     Then the user should see a report summarizing income and expenses for the selected date range
     And the report should be available for download in PDF format
 
-@TSCID315009
+@TSCID49005
   Scenario: View Detailed Transaction for a Specific Expense
     Given the user has filtered expenses by "Groceries"
     When the user clicks on a specific transaction
     Then the user should see detailed information about the transaction, including the date, amount, merchant name, and transaction ID
 
-@TSCID315010
+@TSCID49006
   Scenario: Alert for High Expense
     Given the user is on the "Income and Expenses" page
     When the total expenses for a month exceed $2000

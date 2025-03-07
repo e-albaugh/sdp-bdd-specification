@@ -10,7 +10,7 @@ Given('the user is logged into their bank account', () => {
 });
 
 //
-// SCENARIO 1: View Summary of Income and Expenses (@TSCID315005)
+// SCENARIO 1: View Summary of Income and Expenses (@TSCID326019)
 //
 Given('the user is on the account overview page', () => {
   cy.log('TRIVIAL PASS: user is on account overview page');
@@ -29,7 +29,7 @@ Then('the summary should display the total income and total expenses', () => {
 });
 
 //
-// SCENARIO 2: Filter Income by Type (@TSCID315006)
+// SCENARIO 2: Filter Income by Type (@TSCID326020)
 //
 Given('the user is on the {string} page', (pageName) => {
   cy.log(`TRIVIAL PASS: user is on "${pageName}" page`);
@@ -55,7 +55,7 @@ Then('the total amount for {string} income should be displayed', (incomeType) =>
 });
 
 //
-// SCENARIO 3: Filter Expenses by Type (@TSCID315007)
+// SCENARIO 3: Filter Expenses by Type (@TSCID326021)
 // -> "Fully Automated" with Cypress
 //
 
@@ -93,7 +93,7 @@ Then('the total amount for {string} expenses should be displayed', (expenseType)
 });
 
 //
-// SCENARIO 4: Generate Report of Income and Expenses (@TSCID315008)
+// SCENARIO 4: Generate Report of Income and Expenses (@TSCID326022)
 //
 When('the user clicks on {string}', (buttonLabel) => {
   cy.log(`TRIVIAL PASS: user clicks on "${buttonLabel}"`);
@@ -112,7 +112,7 @@ Then('the report should be available for download in PDF format', () => {
 });
 
 //
-// SCENARIO 5: View Detailed Transaction for a Specific Expense (@TSCID315009)
+// SCENARIO 5: View Detailed Transaction for a Specific Expense (@TSCID326023)
 //
 Given('the user has filtered expenses by {string}', (expense) => {
   cy.log(`TRIVIAL PASS: user has filtered expenses by "${expense}"`);
@@ -127,7 +127,7 @@ Then('the user should see detailed information about the transaction, including 
 });
 
 //
-// SCENARIO 6: Alert for High Expense (@TSCID315010)
+// SCENARIO 6: Alert for High Expense (@TSCID326024)
 //
 When('the total expenses for a month exceed $2000', () => {
   cy.log('TRIVIAL PASS: total expenses exceed $2000');
